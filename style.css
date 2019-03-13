@@ -5,6 +5,30 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.navbar {
+  background: none;
+  position: absolute;
+  z-index: 1;
+  right: 8%;
+  top: 5%;
+}
+
+.nav-item: {
+  padding: 0 12px;
+}
+
+.nav-link:hover {
+  font-size: 1.3rem;
+  padding: 0 10px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 1.2rem;
+  font-weight: 300;
+  transition-duration:800ms;
+}
+
 .showcase:after {
   content: '';
   height: 100vh;
@@ -102,7 +126,7 @@ footer p {
 .social-icon {
   margin: 20px 10px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 /* Small Screens */
@@ -145,5 +169,17 @@ footer p {
 
   .content {
     top: 0%;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    position: absolute;
+    padding: 0;
+    background: none;
+    display: block;
+    z-index: 3;
+    right: 8%;
+    top: 3%;
   }
 }
